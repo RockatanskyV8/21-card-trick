@@ -33,7 +33,7 @@ const Pile = ({ images, setRepNumber, pile, setPilePicked, setImages }) => {
                 ...animation,
                 bezier: {
                   ...animation.bezier,
-                  vars: [{ x: -400 + 300 * pile, y: -500 + 70 * index }]
+                  vars: [{ x: -600 + 150 * index , y: -400 + 300 * pile }]
                 },
                 duration: (1000 / 7) * index
               }}
@@ -45,7 +45,7 @@ const Pile = ({ images, setRepNumber, pile, setPilePicked, setImages }) => {
                 style={{
                   position: "absolute",
                   left: "50%",
-                  top: "500px"
+                  top: "400px"
                 }}
               />
             </TweenOne>

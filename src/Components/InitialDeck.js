@@ -22,9 +22,9 @@ const InitialDeck = ({ imagesArr, setCardPicked }) => {
   const render21Cards = () => {
     return (
       <>
-        <p className="pintro">Memorize a card... any card</p>
+        <p className="pintro">Escolha uma carta, qualquer carta</p>
         <button onClick={handleClick} className="button">
-          Ok I'm ready
+          Já escolhi
         </button>
         <div style={{ width: "0" }}>
           {imagesArr.map((image, index) => (
@@ -46,7 +46,7 @@ const InitialDeck = ({ imagesArr, setCardPicked }) => {
                 style={{
                   position: "absolute",
                   left: "0",
-                  top: "70px"
+                  top: "50px"
                 }}
               />
             </TweenOne>
@@ -55,7 +55,6 @@ const InitialDeck = ({ imagesArr, setCardPicked }) => {
       </>
     );
   };
-
   //Loop through the 21 card images and display them for user to mentally pick a card.
   return (
     <div
@@ -70,5 +69,4 @@ const InitialDeck = ({ imagesArr, setCardPicked }) => {
     </div>
   );
 };
-
 export default InitialDeck;

@@ -151,6 +151,7 @@ const ThreePiles = ({ deckID }) => {
               setPilePicked={setPilePicked}
               setImages={setImages}
             />
+            <br /><br />
             <Pile
               pile={1}
               images={images[1]}
@@ -158,6 +159,7 @@ const ThreePiles = ({ deckID }) => {
               setPilePicked={setPilePicked}
               setImages={setImages}
             />
+            <br /><br />
             <Pile
               pile={2}
               images={images[2]}
@@ -165,6 +167,7 @@ const ThreePiles = ({ deckID }) => {
               setPilePicked={setPilePicked}
               setImages={setImages}
             />
+            <br /><br />
           </>
         ) : (
           <Loader />
@@ -178,18 +181,16 @@ const ThreePiles = ({ deckID }) => {
       <>
         {repNumber === 3 ? (
           <p>
-            Let's start building a connection to your card...
-            <br />
-            which pile is your card in?{" "}
+            Escolha a fileira onde está sua carta{" "}
           </p>
         ) : repNumber === 2 ? (
           <p>
-            I'm starting to build a better connection to your card...
-            <br />
-            which pile is your card in?
+            mais uma vez escolha a fileira onde está sua carta
           </p>
         ) : (
-          <p>OK one last time tell me which pile is your card in?</p>
+          <p>
+            Ultima vez
+          </p>
         )}
       </>
     );
@@ -198,12 +199,11 @@ const ThreePiles = ({ deckID }) => {
   const renderFinalCard = () => {
     return (
       <>
-        <p>Is this your card?</p>
+        <p>Esta é sua carta?</p>
         <img src={finalCard} alt="" />
         <br />
-        <img src={davidblaine} alt="parody of david blaine" />
         <p>
-          <a href="/">Try Again?</a>
+          <a href="/">Novamente?</a>
         </p>
       </>
     );

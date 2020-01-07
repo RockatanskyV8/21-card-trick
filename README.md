@@ -1,42 +1,34 @@
-# React 21 Card Trick
+# ReactJS 21 Card Trick
 
-A react app that demonstrates a card trick.
+App feito em react, fork de [21-card-trick, por jambis](https://github.com/jambis/21-card-trick),
+com demonstrações em https://react-21-cardtrick.netlify.com ou https://21-card-trick.jambis.now.sh,
+usando a API: [Decks of Cards API](http://deckofcardsapi.com/),
+[desafio proposto por Victhor Araújo](https://gist.github.com/araujovicthor/70e87dd9643d7e297f78dce0e8b185f0).
+
+Acabei esquecendo de fazer o fork antes, por isso só tem um commit
+
+## Features
+
+- Não consegui salvar o id do deck em cache, então todas as tentativas são com um deck diferente
+- Também não consegui tornar a aplicação responsiva.
 
 ## How To Play
 
-- Click done once you have memorized 1 of the 21 cards.
-- Pick which of the 3 piles your card is located in. Repeat this a total of 3 times.
-- At the end your card will be displayed.
-
-## Demo
-
-You can view a live demo over at https://react-21-cardtrick.netlify.com
-or https://21-card-trick.jambis.now.sh
-
-![](react21cardtrick-demo.gif)
+- Memorize uma carta e clique no botão
+- Escolha uma das 3 fileiras onde sua carta está, esse processo se repetirá 3 vezes
+- No fim sua carta será exibida
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-- Fork the project
-- Clone or download the project
-- Install dependencies
+Para o projeto funcionar:
 
 ```
 npm i
 ```
 
-- Finally you can run the app by typing in your terminal
-
 ```
 npm start
 ```
-
-## Built With
-
-- create-react-app
-- [Decks of Cards API](http://deckofcardsapi.com/)
 
 ## License
 

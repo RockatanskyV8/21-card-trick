@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import InitialDeck from "./Components/InitialDeck";
 import ThreePiles from "./Components/ThreePiles";
-import Header from "./Components/Header";
+
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import "./App.css";
 
@@ -13,8 +13,7 @@ function App() {
   const [shortDeck, setShortDeck] = useState(null); //New shuffled deck containing only 21 cards
   const [cardPicked, setCardPicked] = useState(false); //Has user picked a card?
 
-  const corsURL = "https://cors-anywhere.herokuapp.com/";
-  const baseURL = `${corsURL}https://deckofcardsapi.com/api/deck`;
+  const baseURL = `https://deckofcardsapi.com/api/deck`;
 
   //Get initial shuffled deck (get initial deck id) of 52 cards
   useEffect(() => {
@@ -74,7 +73,6 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
 
       {!cardPicked ? (
         <InitialDeck imagesArr={imagesArr} setCardPicked={setCardPicked} />
@@ -84,5 +82,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
