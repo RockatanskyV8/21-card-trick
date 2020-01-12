@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Pile from "./Pile";
 import Loader from "./Loader";
-import davidblaine from "../images/parodydavidblaine.gif";
 
 const ThreePiles = ({ deckID }) => {
   const [cardsRemaining, setCardsRemaining] = useState(21);
